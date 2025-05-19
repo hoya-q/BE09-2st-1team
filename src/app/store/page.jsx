@@ -2,7 +2,7 @@
 
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import StoreLocationSection from "@/app/(main)/(store)/others/components/StoreLocationSection";
 
 export default function StorePage() {

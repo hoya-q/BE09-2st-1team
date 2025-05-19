@@ -1,3 +1,5 @@
+"use client";
+
 import React, { Suspense } from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/header/Header";

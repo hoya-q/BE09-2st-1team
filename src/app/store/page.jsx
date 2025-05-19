@@ -9,7 +9,9 @@ export default function StorePage() {
   return (
     <div className="w-full min-h-screen overflow-hidden bg-white">
       <main className="flex flex-col pt-[110px]">
-        <StoreLocationSection />
+        <Suspense fallback={<div>로딩 중...</div>}>
+          <StoreLocationSection />
+        </Suspense>
       </main>
     </div>
   );

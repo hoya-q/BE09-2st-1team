@@ -1,27 +1,12 @@
+const twAnimate = require("tw-animate-css"); // ← 설치되어 있어야 함
+
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {
-      colors: {
-        primary: "#FF5733",
-        secondary: "#C70039",
-      },
-      fontFamily: {
-        pre: ["Pretendard", "sans-serif"],
-        cafe: ["Cafe24Decobox", "sans-serif"],
-        one: ["ONE-Mobile-Title"],
-        yajalnan: ["yg-jalnan"],
-      },
-    },
-  },
-  plugins: [],
-};
-x;
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}", // ✅ App Router 경로 포함해야 함
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [twAnimate], // ← 이걸 빠뜨리면 애니메이션 동작 안 함
 };

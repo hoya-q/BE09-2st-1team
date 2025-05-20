@@ -167,7 +167,7 @@ export default function Section05() {
               className="pb-[30px]"
             >
               {slideItems.map((item) => (
-                <SwiperSlide>
+                <SwiperSlide key={item.id}>
                   <a href="#!">
                     <Image src={item.imgSrc} alt={item.imgAlt} width={378} height={251} className="rounded-[10px]" />
                     <h3 className="mt-[20px] mb-[10px] text-[24px] font-bold text-[#512d1e]">{item.title}</h3>

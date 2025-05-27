@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -42,12 +42,11 @@ export default function Page() {
 
   return (
     <>
-      <Header />
       <HeroSection />
 
       <div className="flex items-center text-sm font-medium"></div>
 
-      <div className="max-w-screen-xl px-4 mx-auto py-30">
+      <div className="max-w-screen-xl px-4 mx-auto pt-[4%] pb-[5%]">
         <div className="w-full mb-8" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
           <div className="relative w-auto mb-5 overflow-hidden">
             <Swiper
@@ -108,9 +107,7 @@ export default function Page() {
         <StoreDetailTable />
       </div>
 
-      <Suspense fallback={<div>로딩 중...</div>}>
-        <StoreLocationSection />
-      </Suspense>
+      <StoreLocationSection />
     </>
   );
 }

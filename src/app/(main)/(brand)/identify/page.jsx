@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Section01 from "./components/section01";
+import Section01 from "./components/Section01";
 import Section02 from "./components/Section02";
 import Section03 from "./components/Section03";
 import Section04 from "./components/Section04";

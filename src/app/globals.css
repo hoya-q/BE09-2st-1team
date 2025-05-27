@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom plugins & animations */
+/* @import "tw-animate-css"; */
+
 :root {
   --font-sans: "Pretendard", sans-serif;
   --font-mono: "Pretendard", monospace;
